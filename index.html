@@ -1,236 +1,145 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="css/style.css">
+
         <style>
-            * {
-            box-sizing: border-box;
-            }
-
-            body {
-            font-family: Arial;
-            padding: 10px;
-            background: #f1f1f1;
-            }
-
-            /* Header/Blog Title */
-            .header {
-            padding: 30px;
-            text-align: center;
-            background: white;
-            }
-
-            .header h1 {
-            font-size: 50px;
-            }
-
-            /* Style the top navigation bar */
-            .topnav {
-            overflow: hidden;
-            background-color: #333;
-            }
-
-            /* Style the topnav links */
-            .topnav a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            }
-
-            /* Change color on hover */
-            .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-            }
-
-            /* Create two unequal columns that floats next to each other */
-            /* Left column */
-            .leftcolumn {   
-            float: left;
-            width: 75%;
-            }
-
-            /* Right column */
-            .rightcolumn {
-            float: left;
-            width: 25%;
-            background-color: #f1f1f1;
-            padding-left: 20px;
-            }
-
-            /* Fake image */
-            .fakeimg {
-            background-color: #aaa;
-            width: 100%;
-            padding: 20px;
-            }
-
-            /* Add a card effect for articles */
-            .card {
-            background-color: white;
-            padding: 20px;
-            margin-top: 20px;
-            }
-
-            /* Clear floats after the columns */
-            .row:after {
-            content: "";
-            display: table;
-            clear: both;
-            }
-
-            /* Footer */
-            .footer {
-            padding: 20px;
-            text-align: center;
-            background: #ddd;
-            margin-top: 20px;
-            }
-
-            /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-            @media screen and (max-width: 800px) {
-            .leftcolumn, .rightcolumn {   
-                width: 100%;
-                padding: 0;
-            }
-            }
-
             /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
             @media screen and (max-width: 400px) {
             .topnav a {
                 float: none;
                 width: 100%;
-            }
+                }
             }
         </style>
     </head>
 <body>
-
-    <div class="header">
-        <h1>Technical Documenatation Page</h1>
-        <p>How to Start an Automatic Car</p>
-    </div>
-
-    <nav class="topnav" id="navbar">
-        <header>
-            How to Start An Automatic Car
-        </header>
-        <a class="nav-link" href="#Insert_the_Key_Into_the_Ignition">
-            Insert The Key Into The Ignition
-        </a>
-        <a class="nav-link" href="#Press_the_Brake_Pedal">
-              Press The Brake Pedal
-        </a> 
-        <a class="nav-link" href="#Switch_the_Gear_to_D">
-            Switch The Gear To D
-        </a>
-        <a class="nav-link" href="#Lift_Your_Foot_From_the_Brake">
-            Lift Your Foot From The Brake
-        </a>
-        <a class="nav-link" href="#Press_the_Accelerator">
-            Press The Accelerator
-        </a>
-        <a class="nav-link" href="#Conclusion" style="float:right">  
-            Conclusion
-        </a>
-    </nav>
-    
+      
+    </nav>   
     <div class="row">
-        <div class="leftcolumn"> 
+        <div class="leftcolumn">
+            <div class="card">
+                <nav class="topnav" id="navbar">
+                    <header></header>
+                    <a class="nav-link" href="#Insert_the_Key_Into_the_Ignition">
+                        Insert The Key Into The Ignition
+                    </a>
+                    <a class="nav-link" href="#Press_the_Brake_Pedal">
+                          Press The Brake Pedal
+                    </a> 
+                    <a class="nav-link" href="#Switch_the_Gear_to_D">
+                        Switch The Gear To D
+                    </a>
+                    <a class="nav-link" href="#Lift_Your_Foot_From_the_Brake">
+                        Lift Your Foot From The Brake
+                    </a>
+                    <a class="nav-link" href="#Press_the_Accelerator">
+                        Press The Accelerator
+                    </a>
+                    <a class="nav-link" href="#Conclusion">  
+                        Conclusion
+                    </a>
+                </nav>
+           </div>
+        </div>
+        <div class="rightcolumn">
+
+            <div class="header">
+                <h1>How to Start an Automatic Car</h1>
+            </div>
             <main id="main-doc">
 
-                 <div class="card">
-                     <section class="main-section" id="Insert_the_Key_Into_the_Ignition">
-                        <header>Insert the Key Into the Ignition</header>
-                        <code></code>
-                        <h5>Title description, Dec 7, 2017</h5>
-                        <div class="fakeimg" style="height:200px;">Image</div>
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                     </section>
-                 </div>
                 <div class="card">
-                     <section class="main-section" id="Press_the_Brake_Pedal">
-                        <header>Press the Brake Pedal</header>
-                        <code></code>
-                        <h5>Title description, Sep 2, 2017</h5>
-                        <div class="fakeimg" style="height:200px;">Image</div>
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <section class="main-section" id="Insert_the_Key_Into_the_Ignition">
+                       <header>Insert the Key Into the Ignition</header>
+                       <code></code>
+                       <br>
+                       <div>
+                            <img src="https://fredericksburgautorepair.com/wp-content/uploads/2019/04/why-your-car-keys-get-stuck-in-the-ignition.jpg" 
+                            alt="Key in Ignition" class="img">
+                        </div>
+                       <p>After you have inserted the key into the switch, turn it on and don't do anything else before you read instructions given in the upcoming steps.</p>
+                       <p></p>
                     </section>
-               </div>
-                <div class="card">
-                    <section class="main-section" id="Switch_the_Gear_to_D">
-                        <header>Switch the Gear to D</header>
-                        <code></code>
-                        <h5>Title description, Dec 7, 2017</h5>
-                        <div class="fakeimg" style="height:200px;">Image</div>
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </section>
-               </div>
-                <div class="card">
-                    <section class="main-section" id="Lift_Your_Foot_From_the_Brake">
-                        <header>Lift Your Foot From the Brake</header>
-                        <code></code>
-                        <h5>Title description, Sep 2, 2017</h5>
-                        <div class="fakeimg" style="height:200px;">Image</div>
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </section>
+                </div>
+               <div class="card">
+                    <section class="main-section" id="Press_the_Brake_Pedal">
+                       <header>Press the Brake Pedal</header>
+                       <code></code>
+                       <br>
+                       <div>
+                           <img src="https://cdn-ds.com/blogs-media/sites/134/2019/05/21172911/A-foot-pressing-down-on-the-brake-pedal-of-a-Mercedes-Benz-vehicle_o.jpg"
+                           alt="Press the Brake Pedal" class="img">
+                        </div>
+                       <p>Unlike manual transmission vehicles that have three pedals, automatic vehicles only have two pedals. They have no clutch, so you only have the brake (center) and the accelerator (right). Press the center.</p>
+                       <p></p>
+                   </section>
               </div>
                <div class="card">
-                   <section class="main-section" id="Press_the_Accelerator">
-                        <header>Press the Accelerator</header>
-                        <code></code>
-                        <h5>Title description, Sep 2, 2017</h5>
-                        <div class="fakeimg" style="height:200px;">Image</div>
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </section>
-               </div>
+                   <section class="main-section" id="Switch_the_Gear_to_D">
+                       <header>Switch the Gear to D</header>
+                       <code></code>
+                       <br>
+                       <div>
+                           <img src="https://i.stack.imgur.com/NR0dt.jpg"
+                           alt="Switch the Gear to D" class="img">
+                        </div>
+                       <p>In an automatic transmission vehicle, most driving is done with the gearshift set to "D". You should switch gear to the first D position.</p>
+                       <p></p>
+                   </section>
+              </div>
                <div class="card">
-                <section class="main-section" id="Conclusion">
-                     <header>Conclusion</header>
-                     <code></code>
-                     <h5>Title description, Sep 2, 2017</h5>
-                     <div class="fakeimg" style="height:200px;">Image</div>
-                     <p>Make sure you followed each step in order:</p>
-                     <ol>
+                   <section class="main-section" id="Lift_Your_Foot_From_the_Brake">
+                       <header>Lift Your Foot From the Brake</header>
+                       <code></code>
+                       <br>
+                       <div>
+                           <img src="https://images.wheels.ca/wp-content/uploads/2017/11/Left_foot_braking1.jpg"
+                           alt="Lift Your Foot From the Brake" class="img">
+                        </div>
+                       <p>New driver should lift the foot pressing the brake slowly. Otherwise, your car will take off too fast and that is quite uncomfortable for your passengers and you.</p>
+                       <p></p>
+                   </section>
+             </div>
+              <div class="card">
+                  <section class="main-section" id="Press_the_Accelerator">
+                       <header>Press the Accelerator</header>
+                       <code></code>
+                       <br>
+                       <div>
+                           <img src="https://previews.123rf.com/images/rukawajung/rukawajung1505/rukawajung150500171/40192293-press-accelerator-pedal-for-speed-up.jpg"
+                           alt="Press the Accelerator" class="img">
+                        </div>
+                       <p>Once the wheels have started to turn and you are confident, press the accelerator to speed up the car about 30km/hour.</p>
+                       <p></p>
+                   </section>
+              </div>
+              <div class="card">
+                    <section class="main-section" id="Conclusion">
+                        <header>Conclusion</header>
+                        <code></code>
+                        <br>
+                        <div>
+                        <img src="https://media.autoexpress.co.uk/image/private/s--iZwvOSjJ--/v1563182808/autoexpress/2018/10/01_45.jpg"
+                        alt="An Automatic Car" class="img">
+                        </div>
+                        <p>Make sure you followed each step in order:</p>
+                    <ol>
                         <li>Insert The Key Into The Ignition</li>
                         <li>Press The Brake Pedal</li>
                         <li>Switch The Gear To D</li>
                         <li>Lift Your Foot From The Brake</li>
                         <li>Press The Accelerator</li>
-                    </ol>
-                     <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                 </section>
-            </div>
-            </main>
-        </div>
-         <div class="rightcolumn">
-             <div class="card">
-                 <h2>About Me</h2>
-                 <div class="fakeimg" style="height:100px;">Image</div>
-                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-            </div>
-             <div class="card">
-                <h3>Popular Post</h3>
-                <div class="fakeimg"><p>Image</p></div>
-                <div class="fakeimg"><p>Image</p></div>
-                <div class="fakeimg"><p>Image</p></div>
-            </div>
-            <div class="card">
-                <h3>Follow Me</h3>
-                <p>Some text..</p>
-            </div>
+                   </ol>
+                    <p>Learning how to start a car with automatic transmission is easier than the one with a manual transmission. It will only be in the first few attempts that you will find these steps hard to remember. Repeating them regularly would make you perform them automatically.</p>
+                </section>
+           </div>
+           </main>   
         </div>
     </div>
 
     <div class="footer">
-        <h2>Footer</h2>
+        <h2>How to Start an Automatic Car - 2021</h2>
     </div>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
